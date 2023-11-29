@@ -1,0 +1,270 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    background: #e8effa;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 0.5em;
+}
+
+.featured-courses {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.featured-courses h2 {
+    margin-bottom: 1em;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    background: #fff;
+    margin: 1em;
+    padding: 1em;
+    width: calc(33.333% - 2em); /* Three items per row */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-item h3 {
+    margin-top: 0.5em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .courses-container {
+        flex-direction: column;
+    }
+
+    .course-item {
+        width: auto; /* Full width on smaller screens */
+    }
+}
+
+.banner {
+    background-color: #0077CC; /* Choose a color that fits your design */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 15px 25px; /* Increased padding for larger buttons */
+    background-color: white;
+    color: #0077CC;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #005fa3;
+    color: white;
+}
+
+.banner h1 {
+    margin: 0 0 0 10px; /* Adds margin to the left of the title */
+    font-size: 3em; /* Increase the size of the text */
+}
+
+.course-paths, .individual-courses {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.course-paths .courses-container, .individual-courses .courses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-paths .course-item, .individual-courses .course-item {
+    background: #fff;
+    margin: 1em;
+    padding: 1em;
+    width: calc(25% - 2em); /* Adjust for four items per row */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-item:hover {
+    background-color: #e8effa; /* Highlight effect on hover */
+    cursor: pointer;
+}
+
+.course-item {
+    background: #fff;
+    margin: 1em;
+    padding: 20px; /* Increased padding */
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height to make it square */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Rounded edges */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.course-item img {
+    max-width: 100%;
+    max-height: 60%; /* Adjust based on your needs */
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;  /* Change this to your desired width */
+    height: auto;  /* 'auto' will maintain the aspect ratio */
+}
+
+/* Assuming the previous styles are kept as is, adding or modifying the following */
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust based on your preference */
+    height: auto;
+    margin-right: 10px;
+}
+
+.banner h1 {
+    font-size: 2em; /* Adjust the font size as needed */
+    margin: 0; /* Removes default margin */
+}
+
+.form-styling {
+    max-width: 400px; /* Adjust the width as needed */
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form-styling input[type="text"],
+.form-styling input[type="email"],
+.form-styling input[type="password"],
+.form-styling button {
+    width: 100%; /* Full width of the form */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+}
+
+form-styling button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form-styling button:hover {
+    background-color: #45a049;
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: #0077CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em; /* Bigger font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #005fa3;
+}
+
+/* Enhancements for better readability */
+.main-content {
+    text-align: center;
+    margin-top: 5%; /* Centering vertically */
+}
+
+form-styling h2 {
+    font-size: 2.5em; /* Making the title larger */
+    margin-bottom: 20px;
+}
+
+form-styling input[type="text"],
+form-styling input[type="email"],
+form-styling input[type="password"] {
+    width: 90%; /* Responsive width */
+    padding: 15px; /* Larger padding */
+    font-size: 1.2em; /* Larger font size */
+}
+
+form-styling button {
+    padding: 15px;
+    font-size: 1.2em;
+}
